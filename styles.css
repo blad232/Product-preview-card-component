@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap");
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	font-size: 62.5%;
+}
+body {
+	background-color: hsl(30, 38%, 92%);
+	font-family: fraunces, sans-serif;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+}
+
+div.container {
+	max-width: 36rem;
+	min-height: 60rem;
+	margin: 2.9rem 0;
+	background-color: white;
+}
+div.container,
+button {
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	overflow: hidden;
+}
+img.mobile {
+	max-width: 100%;
+}
+img.desktop {
+	display: none;
+}
+.caption {
+	padding: 25px;
+}
+.caption > span {
+	letter-spacing: 0.3rem;
+}
+.caption span,
+p {
+	font-family: montserrat, sans-serif;
+	color: hsl(228, 12%, 48%);
+	font-size: 1.48rem;
+	font-weight: lighter;
+}
+.caption > h1,
+.price_container h1 {
+	font-size: 3.3rem;
+}
+.caption h1,
+p {
+	margin: 20px 0;
+}
+.price_container span {
+	text-decoration: line-through;
+	margin-left: 15px;
+	vertical-align: 5px;
+}
+.price_container h1 {
+	color: hsl(158, 36%, 37%);
+}
+
+button {
+	background-color: hsl(158, 36%, 37%);
+	color: white;
+	width: 100%;
+	padding: 15px;
+	border: none;
+	font-weight: bold;
+}
+button > object {
+	margin: 0 10px 0 -20px;
+	position: relative;
+	top: 3px;
+}
+button:hover {
+	background-color: hsl(158, 29%, 25%);
+	cursor: pointer;
+}
+/* media querys */
+@media screen and (min-width: 700px) {
+	body {
+		min-height: 100vh;
+		box-sizing: border-box;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	div.container {
+		max-width: 60rem;
+		min-height: 45rem;
+		margin: 2.9rem 0;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	img.mobile {
+		display: none;
+	}
+	img.desktop {
+		display: inherit;
+		max-width: 100%;
+	}
+}
